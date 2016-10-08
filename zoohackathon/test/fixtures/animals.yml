@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  animal_pic: MyString
+  common_name: MyString
+  scientific_name: MyString
+
+two:
+  animal_pic: MyString
+  common_name: MyString
+  scientific_name: MyString

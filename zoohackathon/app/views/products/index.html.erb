@@ -18,7 +18,7 @@
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
-        <td><%= product.product_pic %></td>
+        <td><%= image_tag product.product_pic.thumb.url %></td>
         <td><%= product.animal %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>

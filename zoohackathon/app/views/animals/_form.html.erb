@@ -12,11 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :animal_pic %>
-    <%= f.file_field :animal_pic %>
-  </div>
-
-  <div class="field">
     <%= f.label :common_name %>
     <%= f.text_field :common_name %>
   </div>
@@ -24,6 +19,16 @@
   <div class="field">
     <%= f.label :scientific_name %>
     <%= f.text_field :scientific_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :animal_pic %>
+    <%= f.file_field :animal_pic %>
+  </div>
+
+  <div class="field">
+    <%= f.label :countries %>
+    <%= f.collection_select :country_ids, @countries, :id, :name%>
   </div>
 
   <div class="actions">

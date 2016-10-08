@@ -10,5 +10,12 @@
   <%= @country.region %>
 </p>
 
+<p>
+  <strong>Animals:</strong>
+  <% @country.animals.each do |animal| %>
+    <%= animal.common_name %>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_country_path(@country) %> |
 <%= link_to 'Back', countries_path %>

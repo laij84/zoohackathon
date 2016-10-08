@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Zoohackathon</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,6 +16,8 @@
   </header>
 
   <body>
-    <%= yield %>
+  <div class="container">
+      <%= yield %>    
+    </div>
   </body>
 </html>

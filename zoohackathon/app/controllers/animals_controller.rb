@@ -5,25 +5,30 @@ class AnimalsController < ApplicationController
   # GET /animals.json
   def index
     @animals = Animal.all
+    @countries = Country.all
   end
 
   # GET /animals/1
   # GET /animals/1.json
   def show
+    @countries = Country.all
   end
 
   # GET /animals/new
   def new
     @animal = Animal.new
+    @countries = Country.all
   end
 
   # GET /animals/1/edit
   def edit
+    @countries = Country.all
   end
 
   # POST /animals
   # POST /animals.json
   def create
+    @countries = Country.all
     @animal = Animal.new(animal_params)
 
     respond_to do |format|
@@ -40,6 +45,7 @@ class AnimalsController < ApplicationController
   # PATCH/PUT /animals/1
   # PATCH/PUT /animals/1.json
   def update
+    @countries = Country.all
     respond_to do |format|
       if @animal.update(animal_params)
         format.html { redirect_to @animal, notice: 'Animal was successfully updated.' }

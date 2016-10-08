@@ -1,3 +1,3 @@
 class Country < ApplicationRecord
-  has_many :animals
+  has_and_belongs_to_many :animals
 end
